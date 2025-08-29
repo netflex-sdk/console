@@ -3,7 +3,6 @@
 namespace Netflex\Console\Commands;
 
 use Exception;
-use Illuminate\Foundation\Console\ServeCommand;
 
 class NetflexSetupCommand extends ServeCommand
 {
