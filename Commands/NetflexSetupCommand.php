@@ -31,6 +31,15 @@ class NetflexSetupCommand extends ServeCommand
     parent::__construct();
   }
 
+  /**
+   * ServeCommand sets defaults for its --host and --port options, which this command does not have.
+   *
+   * @return void
+   */
+  protected function configureDefaults(): void
+  {
+  }
+
   public function resolveSite()
   {
     $client = $this->client();
